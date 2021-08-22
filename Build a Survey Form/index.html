@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Build a Survey Form</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    
+    <main class="main" id="main">
+        <section class="section" id="section">
+            <article class="main-titel">
+                <h1 id="title">
+                    Create an prof Survey Form
+                </h1>
+                <p id="description">
+                    <em>Thank you for taking the time to help us improve the platform</em>
+                </p>
+            </article>
+            <article id="survey">
+                <form action="" id="survey-form">
+
+                            <div class="form-group">
+                                <label for="name" id="name">Name</label><br>
+                                <input type="text" name="name-label" id="name" required placeholder="Enter Your Name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" id="email">Email</label><br>
+                                <input type="email" name="email-label" id="email" required placeholder="Enter Your Email">
+                            </div>  
+
+                            <div class="form-group">
+                                <label for="number" id="number">Age (optional)</label><br>
+                                <input type="number" name="number-label" id="number"  placeholder="Enter Your Age">
+                            </div>
+                            
+                            <div class="form-group-b">
+                                <label for="dropdown">What is your update jop used</label><br>
+                                <select name="dropdown" id="dropdown">
+                                    <option value="" selected>Select an option</option>
+                                    <option value="2">Front-end developer</option>
+                                    <option value="3">Back-end developer</option>
+                                    <option value="4">Data managment</option>
+                                </select>
+                            </div>
+                            <div class="form-group-b">
+                                <div class="qus">
+                                <label>what is your experiance in web development</label></div>
+                                <label class="pad-l" for="male"><input type="radio" name="grouped" id="male">1-2</label><br>
+                                <label class="pad-l" for="famle"><input type="radio" name="grouped" id="famle">2-4</label><br>
+                                <label class="pad-l" for="famle"><input type="radio" name="grouped" id="famle">4-8</label><br>
+                                <label class="pad-l" for="famle"><input type="radio" name="grouped" id="famle"> >8</label><br>
+                            </div>
+                            <div class="form-group-b">
+                                <div class="qus">
+                                <label>what is language use in web development</label></div>
+                                <label class="pad-l" for="one"><input type="checkbox" name="one" id="one">Html</label><br>
+                                <label class="pad-l" for="tow"><input type="checkbox" name="tow" id="tow">Css</label><br>
+                                <label class="pad-l" for="three"><input type="checkbox" name="three" id="three">JavaScript</label><br>
+                                <label class="pad-l" for="four"><input type="checkbox" name="four" id="four">Bootstap</label><br>
+                                <label class="pad-l" for="fife"><input type="checkbox" name="fife" id="fife">Jquery</label><br>
+                                <label class="pad-l" for="sex"><input type="checkbox" name="sex" id="sex">Python</label><br>
+                            </div>
+                            <div class="form-group">
+                                <label for="desc">Description</label><br>
+                                <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="form-group-s">
+                                <input id="submit" type="submit" value="submit">
+                            </div>
+
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    box-shadow: none;
+    color: white;
+    font-size: 20px;
+    line-height: 1.4;
+}
+input {
+    color: #495057;
+}
+
+body{
+    
+    background-image: url(../images/2.jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-titel{
+    margin-top: 5rem;
+    text-align: center;
+    height: 5rem;
+}
+.main-titel h1{
+    font-size: 2rem;
+
+}
+
+#survey{
+    width: 50%;
+    background: rgba(118, 111, 210, 0.2);
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+#survey-form{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+ }
+ .form-group{
+    font-size: 20px;
+    width: 100%;
+ }
+ .form-group label{
+     width: 100%;
+ }
+
+ .form-group input{
+    width: 100%;
+    height: 38px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin-top: 6px;
+    color: #495057;
+
+ }
+ .form-group-b{
+    font-size: 20px;
+    width: 100%;
+ }
+
+ #dropdown{
+    width: 100%;
+    height: 38px;
+    padding: 0px 0px 0px 10px;
+    border-radius: 10px;
+    margin-top: 6px;
+    color: #495057;
+}
+#dropdown option{
+    color: #495057;
+}
+ .form-group-s{
+    background-color: #37af65;
+    width: 100%;
+    height: 46;
+    padding: 12px;
+    text-align: center;
+
+ }
+ #desc{
+     margin-top: 6px;
+     width: 100%;
+     color: #495057;
+     padding: 10px;
+     border-radius: 10px;
+     margin-top: 6px;
+ }
+ .qus{
+     display: block;
+     margin-bottom: 10px;
+ }
+.pad-l input{
+    margin: 5px 5px 5px 0px;
+    width:1.5rem;
+    height: 1.5rem;
+    position: relative;
+    top: 5px;
+    border: none;
+}
+ #submit{
+     width: 100%;
+    background-color: #37af65;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    #survey{
+        width: 65%;
+    }
+
+  }
+  
+@media screen and (max-width: 800px) {
+    #survey{
+        width: 75%;
+    }
+
+@media screen and (max-width: 500px) {
+    #survey{
+        width: 100%;
+    }
+
+  }
+
+
+  }  
+
