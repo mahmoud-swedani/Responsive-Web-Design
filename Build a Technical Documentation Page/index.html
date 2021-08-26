@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Build a Technical Documentation Page</title>
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar" class="navbar header">
+        <header id="header" >
+            <h1>Javascript Documentation</h1>
+            
+                <ul class="nav-ul">
+                    <li class="nav-list">
+                        <a href="#Javascript_Strings" class="nav-link">Javascript Strings</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#Javascript_Numbers" class="nav-link">Javascript Numbers</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#Javascript_Booleans" class="nav-link">Javascript Booleans</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#Javascript_Operators" class="nav-link">Javascript Operators</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#Javascript_Variables" class="nav-link">Javascript Variables</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#Javascript_Functions" class="nav-link">Javascript Functions</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#Javascript_Arrays" class="nav-link">Javascript Arrays</a>
+                    </li>
+                    <li class="nav-list"><a href="#Javascript_Objects" class="nav-link">Javascript Objects</a></li>
+                </ul>
+        </header>
+    </nav>
+        <main id="main-doc" class="main-doc">
+            
+            <section id="Javascript_Strings" class="main-section">
+                <header class="section-header">
+                    Javascript Strings
+                </header>
+                <div class="par">
+                    <p class="p">
+                        Strings in JavaScript are contained within a pair of either single quotation marks '' or double quotation marks "". 
+                        Both quotes represent Strings but be sure to choose one and STICK WITH IT. If you start with a single quote, you need to end with a single quote.
+                        There are pros and cons to using both IE single quotes tend to make it easier to
+                        write HTML within Javascript as you don’t have to escape the line with a double quote.
+                    </p>
+                    <div class="code-div">
+                        <code class="code">
+                            'This is a string. 👏';<br>
+                            "This is the 2nd string. 💁";
+                        </code>
+                    </div>
+                    <p class="p">
+                        <strong> JavaScript String Methods and Properties</strong><br>
+                        Strings have their own built-in variables and functions, also known as properties and methods. 
+                        Here are some of the most common ones.
+                        JavaScript String Length
+                        A string’s length property keeps track of how many characters it has.
+                    </p>
+                    <div class="code-div">
+                        <code class="code">
+                            "caterpillar".length;<br>
+                            OUTPUT<br>
+                            11
+                        </code>
+                    </div>
+
+
+                    <div class="lists">
+                        <ul class="ul-list">
+                            <li class="link-list">.toLowerCase();</li>
+                            <li class="link-list">.toUpperCase();</li>
+                            <li class="link-list">.trim();</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+            <hr>
+            <section id="Javascript_Numbers" class="main-section">
+                <header class="section-header">
+                    Javascript Numbers
+                </header>
+                <div class="par">
+                    <p class="p">
+                        Numbers are values that can be used in mathematical operations.
+                        You don’t need any special syntax for numbers — just write them straight into JavaScript.
+                    </p>
+                    <div class="code-div">
+                        <code class="code">
+                            EXAMPLE
+                            12345;
+                        </code>
+                    </div>
+
+                    <p class="p">
+                        <strong>Decimals and fractions</strong><br>
+                        JavaScript doesn’t distinguish between whole numbers and decimals, so you can use them together 
+                        without having to convert from one to the other.
+                    </p>
+                    <div class="code-div">
+                        <code class="code">
+                            EXAMPLE<br>
+                            10 + 3.14159;<br>
+                            OUTPUT<br>
+                            13.14159
+                        </code>
+                    </div>
+
+
+                    <div class="lists">
+                        <ul class="ul-list">
+                            <li class="link-list">Improper fractions use the division operator in the same way.
+                            </li>
+                            <li class="link-list">To use mixed numbers, you need to add the whole number and fraction.
+                            </li>
+                            <li class="link-list">Negative numbers
+                            </li>
+                            <li class="link-list">You can also get a negative number by subtracting a number from a smaller number.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </section>
+            <hr>
+            <section id="Javascript_Booleans" class="main-section">
+                <header class="section-header">
+                    Javascript Booleans
+                </header>
+                <div class="par">
+                    <p class="p">
+                        In JavaScript, a boolean value is one that can either be TRUE or FALSE. 
+                        If you need to know “yes” or “no” about something, then you would want to use the boolean function. 
+                        It sounds extremely simple, but booleans are used all the time in JavaScript programming, 
+                        and they are extremely useful. Anything that needs to be “on” or “off”, “yes” or “no”, “true” or “false”,
+                        or which just has a temporary purpose, is usually a good fit for booleans.
+                        Below is an example of how to use booleans in JavaScript:
+
+                    </p>
+                    <div class="code-div">
+                        <code class="code">
+                            var kitchenLights = false;<br>
+                            kitchenLights = true;<br>
+                            kitchenLights;<br>
+                            OUTPUT<br>
+                            true
+                        </code>
+                    </div>
+
+                    <p class="p">
+                        In this example, the variable "kitchenLights" being set to "true" would indicate that the lights are on.
+                        If it was set to "false" then that would mean they are off. 
+                    </p>
+                    <div class="lists">
+                        <ul class="ul-list">
+                            <li class="link-list">It’s useful to store booleans in variables to keep track of their values and change them over time. Booleans are used as functions to get the values of variables, objects, conditions, and expressions. In fact, Booleans are critical for conditionals to work. </li>
+                            <li class="link-list">In your code, when you need to know whether or not a condition is being met before proceeding to the next step, the boolean function becomes your best friend. If such and such is TRUE, then do this. If it is FALSE, then do something else.
+
+                            </li>
+                            <li class="link-list">Consider something simple like making a sandwich. In your head, you will actually be going through a series of booleans and conditionals:
+
+                            </li>
+                            <li class="link-list">Do I have bread? TRUE or FALSE. If TRUE, then I can proceed to the next step of whether or not I have mustard, ham, etc. If FALSE, then I’ll need to go to the store to get some bread. And so on and so forth.
+
+                            </li>
+                            <li class="link-list">You can never assume anything when programming - you have to write the logic explicitly, and a large part of that is simply knowing whether or not a condition is being met. Hence the importance of booleans in JavaScript.
+
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </section>
+            <hr>
+            <section id="Javascript_Operators" class="main-section">
+                <header class="section-header">
+                    Javascript Operators
+                </header>
+                <div class="par">
+                    <p class="p">
+                        <strong>Operators</strong> are the symbols between values that allow different operations like addition, subtraction, multiplication, and more.
+                        JavaScript has dozens of operators, so let’s focus on the ones you’re likely to see most often.
+                        Arithmetic
+                        The + operator adds two numbers.
+                    </p>
+                    <div class="code-div">
+                        <code class="code">
+                            EXAMPLE<br>
+                            1 + 2;<br>
+                            OUTPUT<br>
+                            3
+                        </code>
+                    </div>
+
+                    <p class="p">
+                        The - operator subtracts one number from another.
+                    </p>
+                    <div class="code-div">
+                        <code class="code">
+                            EXAMPLE<br>
+                            50 - 15;<br>
+                            OUTPUT<br>
+                            35
+                        </code>
+                    </div>
+
+
+                    <p class="p">
+                        The * operator multiplies two numbers. Notice it’s an asterisk and not the × symbol commonly used in math.
+                    </p>
+                    <div class="code-div">
+                        <code class="code">
+                            EXAMPLE<br>
+                            3 * 12;<br>
+                            OUTPUT<br>
+                            36
+                        </code>
+                    </div>
+
+
+                    <p class="p">
+                        The / operator divides one number by another. Notice it’s a forward slash and not the ÷ symbol commonly used in math.
+
+                    </p>
+                    <div class="code-div">
+                        <code class="code">
+                            EXAMPLE<br>
+                            12 / 4;<br>
+                            OUTPUT<br>
+                            3
+                        </code>
+                    </div>
+
+
+                    <div class="lists">
+                        <ul class="ul-list">
+                            <li class="link-list">JavaScript expressions follow an order of operations, so even though + is written first in the following example, the multiplication happens first between the last two numbers and *.
+                            </li>
+                            <li class="link-list">Grouping
+                                () operator groups other values and operations. Code located between parentheses evaluates first as JavaScript solves each operation moving from left to right.
+                                Adding the grouping operator to the previous example causes 1 + 100 to evaluate first.</li>
+                            <li class="link-list">Concatenation
+                                The + operator can also concatenate strings, which is another way of saying it can add them together.</li>
+                            <li class="link-list">Assignment The = operator assigns values. It’s used for setting the value of variables.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </section>
+            <hr>
+            <section id="Javascript_Variables" class="main-section">
+                <header class="section-header">
+                    Javascript Variables
+                </header>
+                <div class="par">
+                    <p class="p">
+                        <strong>Variables</strong> are named values and can store any type of JavaScript value.
+                        Here’s how to declare a variable:
+                    </p>
+                    <div class="code-div">
+                        <code class="code">
+                            EXAMPLE<br>
+                            var x = 100;<br>
+                        </code>
+                    </div>
+
+                    <div class="lists">
+                        <ul class="ul-list">
+                            <li class="link-list">var is the keyword that tells JavaScript you’re declaring a variable.</li>
+                            <li class="link-list">x is the name of that variable.</li>
+                            <li class="link-list">= is the operator that tells JavaScript a value is coming up next.</li>
+                            <li class="link-list">100 is the value for the variable to store.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </section>
+            <hr>
+            <section id="Javascript_Functions" class="main-section">
+                <header class="section-header">
+                    Javascript Functions
+                </header>
+                <div class="par">
+                    <p class="p">
+                        <strong>JavaScript functions</strong> are reusable blocks of code that perform a specific task, taking some 
+                        form of input and returning an output.
+                        To define a function, you must use the function keyword, followed by a name, followed by parentheses ( ).
+                        Then you have to write the function logic between curly brackets { }
+                        <br>Here is an example of how to write a function in JavaScript:
+                    </p>
+                    <div class="code-div">
+                        <code class="code">
+                            EXAMPLE<br>
+                            function addTwoNumbers(x, y) {<br>
+                                return x + y;<br>
+                            }
+                        </code>
+                    </div>
+
+
+                    <div class="lists">
+                        <ul class="ul-list">
+                            <li class="link-list">“Function” is the keyword required to actually start declaring a function</li>
+                            <li class="link-list">“addTwoNumbers” is the function’s name, which is customizable. Function names can contain letters, numbers, and certain special characters, just like variables.</li>
+                            <li class="link-list">(x, y) are parameters, which are variable names for the inputs the function will accept. These parameters are also referred to as arguments.</li>
+                            <li class="link-list">“Return” is the keyword that exits the function and shares an optional value outside</li>
+                            <li class="link-list">The code that the function will execute must be put inside of curly brackets { }</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </section>
+            <hr>
+            <section id="Javascript_Arrays" class="main-section">
+                <header class="section-header">
+                    Javascript Arrays
+                </header>
+                <div class="par">
+                    <p class="p">
+                        <strong>Arrays</strong> are container-like values that can hold other values. The values inside an array are called elements.
+                    </p>
+                    <div class="code-div">
+                        <code class="code">
+                            EXAMPLE<br>
+                            var breakfast = ["coffee", "croissant"];<br>
+                            breakfast;<br>
+                            OUTPUT<br>
+                            ["coffee", "croissant"]
+                        </code>
+
+                    </div>
+
+                    <p class="p">
+                        Array elements don’t all have to be the same type of value.
+                        Elements can be any kind of JavaScript value — even other arrays.
+                    </p>
+                    <div class="code-div">
+                        <code class="code">
+                            EXAMPLE<br>
+                            var hodgepodge = [100, "paint", [200, "brush"], false];<br>
+                            hodgepodge;<br>
+                            OUTPUT<br>
+                            [100, "paint", [200, "brush"], false]
+                        </code>
+                    </div>
+
+                    <div class="lists">
+                        <ul class="ul-list">
+                            <li class="link-list">length
+                            </li>
+                            <li class="link-list">concat
+                            </li>
+                            <li class="link-list">pop</li>
+                            <li class="link-list">reverse</li>
+                            <li class="link-list">push</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </section>
+            <hr>
+            <section id="Javascript_Objects" class="main-section">
+                <header class="section-header">
+                    Javascript Objects
+                </header>
+                <div class="par">
+                    <p class="p">
+                        avaScript objects are best explained by thinking of a real-world object. Take a car for example.
+                        Cars come in all shapes and sizes - different colors, different makes and models, different weight, etc. 
+                        Every car has these properties, but the values are different from one car to another. A red Ford Focus and a blue Honda
+                        Civic are both “cars”, but they are different makes, models, and colors. <br>
+                        JavaScript objects are variables that contain multiple data values. The values within a JS
+                        object are known as properties. Objects use keys to name values, much like how is done with variables. <br>                    
+                        Let’s look at another example. This time let’s think about a course you have to take. The course name is “GRA 2032”,
+                        it starts at 8:00am and it ends at 10:00am. Here’s how we would turn this into an object in JavaScript:
+                    </p>
+                    <div class="code-div">
+                        <code class="code">
+                            EXAMPLE<br>
+                            var course = {<br>
+                                name: "GRA 2032",<br>
+                                start: 8,<br>
+                                end: 10<br>
+                            };
+                        </code>
+                    </div>
+
+                    <p class="p">
+                        JavaScript object values are written in the format of name:value and the different pairs are separated by commas. 
+                        The name:value pairs don’t have to be on different lines for the code to work, but it is much easier to read and understand
+                        the code by formatting it that way. You must also use the opening and closing curly brackets { } when defining your objects <br>
+                        There are two ways to access the value of an object property. 
+                        You can use the dot notation with the name of the property after the period
+                        - objectName.propertyName as in the example below:
+                    </p>
+                    <div class="code-div">
+                        <code class="code">
+                            EXAMPLE <br>
+                            var course = {<br>        
+                                name: "GRA 2032",<br>                  
+                                start: 8,<br>
+                                end: 10<br>
+                            };<br>
+                            ​<br>
+                            course.name;<br>
+                            OUTPUT<br>
+                            "GRA 2032"
+                        </code>
+                    </div>
+
+                    <div class="lists">
+                        <ul class="ul-list">
+                            <li class="link-list">Or you can use the bracket notation with the name of the property inside a string within square brackets - objectName[“propertyName”] as in the example below:
+
+                            </li>
+                            <li class="link-list">To change the value of a property on an existing JS object, you can use a very similar option as when you access the value. You can use the dot notation:
+
+                            </li>
+                            <li class="link-list">Or the bracket notation:
+
+                            </li>
+                            <li class="link-list">Objects can also contain functions, which are called methods. Methods are just the word for functions when they are stored as a property within a JavaScript object. For example, if you have a “person” object, with the properties of “firstName” and  “lastName”, but you want a property for “fullName”, you can create a method that will add the first name and the last name together for you and return the full name as a property. See the example below:
+
+                            </li>
+                            <li class="link-list">You can access a method in a very similar way to accessing the other properties - objectName.methodName()    i.e. person.fullName()
+
+                            </li>
+                        </ul>
+                    </div>
+
+            </section>
+        </main>
+            
+    </div>
+</body>
+</html>
